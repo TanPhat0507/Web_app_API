@@ -1,7 +1,7 @@
 # Fitness_Web_App
 ### Clean-Code convention
-+ In this project we use Pascal and Camel naming convention for variable name and function name
-+ Access Modifiers must be clearly
++ In this project we use Pascal naming convention for variable name and function name (Example: GetUserName, CalculateTotalPrice)
++ Access Modifiers must be clearly (Public, private, protected)
 + Describe everything easy to confuse, cross class function & variables, dependences, helpers in comment clearly in English
 + Add comma ',' after every parameter
 
