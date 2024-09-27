@@ -11,6 +11,14 @@
 + Fetch code before coding new feature.
 + Each feature create a brand new branch.
 + Must not merge code.
+
+### Git Branch structure
+main
+│
+├── develop
+│   ├── feature/tasks_name
+│   ├── bugfix/tasks_name
+
 ### Git & Working flow
 #Step 1: Clone Project
 > git clone http://
