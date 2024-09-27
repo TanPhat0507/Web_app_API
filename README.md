@@ -13,7 +13,7 @@
 + Must not merge code.
 
 ### Git Branch structure
-<img width="225" alt="Ảnh màn hình 2024-09-27 lúc 19 27 36" src="https://github.com/user-attachments/assets/f8a6a6d1-fed5-458c-87dd-5c2a3371f182">
+<img width="238" alt="Ảnh màn hình 2024-09-27 lúc 19 28 54" src="https://github.com/user-attachments/assets/6ea94634-40b1-454d-be95-c50616275d8a">
 
 ### Git & Working flow
 #Step 1: Clone Project
