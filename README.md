@@ -13,11 +13,7 @@
 + Must not merge code.
 
 ### Git Branch structure
-main
-│
-├── develop
-│   ├── feature/tasks_name
-│   ├── bugfix/tasks_name
+<img width="225" alt="Ảnh màn hình 2024-09-27 lúc 19 27 36" src="https://github.com/user-attachments/assets/f8a6a6d1-fed5-458c-87dd-5c2a3371f182">
 
 ### Git & Working flow
 #Step 1: Clone Project
