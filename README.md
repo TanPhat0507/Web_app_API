@@ -1,4 +1,4 @@
-# Business_Social_Network_Flutter_App
+# Fitness_Web_App
 ### Clean-Code convention
 + In this project we use Pascal and Camel naming convention for variable name and function name
 + Access Modifiers must be clearly
