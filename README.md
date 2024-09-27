@@ -1,40 +1,86 @@
-# Web_app
+# Business_Social_Network_Flutter_App
+### Clean-Code convention
++ In this project we use Pascal and Camel naming convention for variable name and function name
++ Access Modifiers must be clearly
++ Describe everything easy to confuse, cross class function & variables, dependences, helpers in comment clearly in English
++ Add comma ',' after every parameter
 
-# Git Process
-- **Step 1: Initializing Repository**
+### Git rules
++ Must not push code to branch master/main, push and create pull request from branch feature to branch develop.
++ Commit and push code to github from 7 A.M to 11 P.M, pull request after this time will be checked in next day.
++ Fetch code before coding new feature.
++ Each feature create a brand new branch.
++ Must not merge code.
+### Git & Working flow
+#Step 1: Clone Project
+> git clone http://
 
-Use the command git init to start a new repository or git clone to copy an existing repository from a remote source.
+if any error occur, try:
 
-- **Step 2: Add and Check Files**
-- Use git add to add new files or changes to the staging area.
-- **Use git status to check the status of files in the working directory.**
-- **Step 3: Commit Changes**
+> git clone https://
 
-Use git commit -m "Commit message" to commit the changes that have been added to the staging area. Each commit is a snapshot of the current state of the repository.
+![image](https://user-images.githubusercontent.com/67773933/115963852-8193a800-a54b-11eb-9fbd-e3a0b9833212.png)
 
-- **Step 4: Create and Switch Branches**
-- Use git branch to view a list of branches and git branch [branch name] to create a new branch.
-- **Use git checkout [branch name] or git switch [branch name] to switch to a different branch.**
-- **Step 5: Merge Branches**
+#Step 2: Check local Git branch & remote Git branch.
 
-After working on a branch, we merged the changes from that branch into the main branch using git merge.
+> git branch -a
 
-- **Step 6: Update Repository (Pull)**
+![image](https://user-images.githubusercontent.com/67773933/115963974-4a71c680-a54c-11eb-8957-ba4da13af117.png)
 
-Use git pull to update the local repository from a remote repository.
+#Step 3: Fetch code from remote to local before working.
+> git fetch origin develop
 
-- **Step 7: Push Changes to Remote Repository (Push)**
+![image](https://user-images.githubusercontent.com/67773933/115964006-8573fa00-a54c-11eb-9dde-a99b51e44da1.png)
 
-Use git push to push commits from the local repository to the remote repository.
+#Step 4: Checkout to develop branch.
+> git checkout develop
 
-- **Step 8: View History and Log**
+![image](https://user-images.githubusercontent.com/67773933/115964039-b2281180-a54c-11eb-8bda-a3512ae6bc67.png)
 
-Use git log to view the commit history and changes in the repository.
+[IMPORTANT] From this, every push and create pull request event will be pushed only to branch develop, must not work with master/main branch (this branch will store lasted stable state of project).
 
-- **Step 9: Handling Conflicts**
+#Step 5: Checkout from branch develop to branch feature to working with your feature.
+[IMPORTANT] Every push and create pull request event will be pushed only to branch develop, must not work with master/main branch (this branch will store lasted stable state of project).
+> git checkout -b feature/tasks_name
 
-During the merge process, if conflicts arise, use merge tools like git mergetool to resolve conflicts.
+#Step 6: [IMPORTANT] When everything have done, check status, test every parts of project from beginning flow of application.
+> git status
 
-- **Step 10: View and Change Uncommitted Changes**
+![image](https://user-images.githubusercontent.com/67773933/115964200-7b9ec680-a54d-11eb-9b8a-2b944f47e44f.png)
 
-Use git diff to view the differences between the working directory and the index/staging area or between commits.
+#Step 7: Affter testing, add all files have change and commit.
+> git add .
+
+> git commit -m 'What are added, changed, removed, name of feature'
+
+NOTICE [What are added, changed, removed, name of feature] must writen in English clearly and detail.
+![image](https://user-images.githubusercontent.com/67773933/115964244-b6a0fa00-a54d-11eb-8852-c526bf111946.png)
+
+#Step 8: Push from local to remote
+> git push origin [Name of branch that you are working]
+
+if you just clone project, try:
+
+> git --set-upstream origin [Name of branch that you are working]
+
+this command will set up a tracking relationship between local and remote repo
+
+![image](https://user-images.githubusercontent.com/67773933/115964299-ff58b300-a54d-11eb-8901-afe6b8d72c47.png)
+
+#Step 9: Access Github.com and create pull request
+
+#Step 10: Check branch have pushed or not. If anything go wrong you can't not see your branch as remote branch
+> git branch -a
+
+#Step 11: Before want to begin new section, ask Duong Tung check everything before update code
+> git fetch --prune
+
+Check all branch again
+> git branch -a
+
+If you see branch feature/name_of_your_branch is deleted, your code is accepted and merged to Develop. If anything wrong with that code you will receive email with comments.
+
+#Step 12:Checkout Develop, pull newest code and repeat the process
+> git checkout develop
+
+> git pull
